@@ -1,0 +1,24 @@
+{
+  "name": "unit-tests-fff",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dragonPetsStore.js",
+  "scripts": {
+    "test": "jest",
+    "test-watch": "jest --watch *.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandresoueu/unit-tests-fff.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexandresoueu/unit-tests-fff/issues"
+  },
+  "homepage": "https://github.com/alexandresoueu/unit-tests-fff#readme",
+  "devDependencies": {
+    "jest": "^21.2.1"
+  }
+}
