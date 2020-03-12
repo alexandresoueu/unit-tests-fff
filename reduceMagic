@@ -1,0 +1,20 @@
+function orderTotal(order) {
+    
+    return order.items.reduce((prev, cur) => cur.price * (cur.quantity || 1) + prev.price)
+}
+// prev = OBJ => cur.price = 800 + prev = 808[Object Obj]
+// prev = 808[Object Obj] + cur.price = 6 + 808[Object Obj] = 6800[object Object]
+
+// prev = OBJ => cur.price = 800 + 8 = 808
+// prev = 808 => cur.price = 6 + undefined = NaN
+
+console.log((808).price)
+
+console.log(orderTotal({
+    items: [
+        { name: "Dragon food",         price: 8,   quantity: 1 },
+        { name: "Dragon cage (small)", price: 800, quantity: 1 },
+        { name: "Dragon cage (small)", price: 2, quantity: 3 }
+    ]
+    
+} ))
